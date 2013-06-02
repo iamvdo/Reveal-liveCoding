@@ -1,4 +1,5 @@
-Reveal_liveCoding
+LiveCoding in Reveal.js
 =================
 
-Live coding in Reveal.js
+A plugin for live coding in Reveal.js.
+
