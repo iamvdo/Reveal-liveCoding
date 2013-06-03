@@ -3,8 +3,8 @@
 * Vincent De Oliveira
 */
 var LiveCoding = (function() {
-
-  // All pre with ".liveCoding" class
+	
+	// All <code> with ".liveCoding" class
 	var allPre = document.querySelectorAll('code.liveCoding');
 
 	for(var i = 0; i < allPre.length; i++){
