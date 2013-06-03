@@ -33,7 +33,7 @@ Follow these steps on the `<code>` tag you want to use for live coding:
 Here is a full example:
 
 ```html
-<pre><code class="liveCoding" data-livecoding-id="myElement" contenteditable>
+<pre><code class="liveCoding css" data-livecoding-id="myElement" contenteditable>
   .title{
     color: red;
   }
@@ -49,6 +49,20 @@ In Reveal, by default, code is highlighted with highlight.js (by detecting the l
 css, xml) on `<code>`. This class is used by LiveCoding to update the code properly. BUT, if you disable highlight.js, 
 or use another highlighter, please use the HTML5 recommended syntax:
 - add a `.language-*` class on the `<code>` tag. (eg `.language-css`, `.language-markup`, ...)
+
+##How LiveCoding works
+
+###CSS
+
+The value of the `data-livecoding-id` attribute is an identifier that is the scope of the live-coding CSS. Thus, it is 
+possible to target all descendants of this identifier.
+Associated styles are added in a `<style>` tag, at the end of the `<body>`.
+
+###Markup (HTML, SVG...)
+
+The value of the `data-livecoding-id` attribute is an identifier that is the parent of the live-coding code. The content 
+of this identifier is replaced by the code you write.
+
 
 ##Notes
 
