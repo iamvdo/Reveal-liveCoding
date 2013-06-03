@@ -27,12 +27,12 @@ Reveal.js uses `<pre>` and `<code>` tags for code.
 Follow this steps on the `<code>` tag you want to use for live coding:
 - add a `contenteditable` attribute (to make it editable)
 - add a `.liveCoding` class.
-- add a `data-liveCoding-id` attribute: the value is the `id` you want to target.
+- add a `data-livecoding-id` attribute: the value is the `id` you want to target.
 
 Here is a full example:
 
 ```html
-<pre><code class="liveCoding" data-liveCoding-id="myElement" contenteditable>
+<pre><code class="liveCoding" data-livecoding-id="myElement" contenteditable>
   .title{
     color: red;
   }
