@@ -21,7 +21,7 @@ var LiveCoding = (function() {
 	 */
 	function update(code){
 
-		var id = code.attributes.getNamedItem('data-liveCoding-id').nodeValue;
+		var id = code.attributes.getNamedItem('data-livecoding-id').nodeValue;
 		var val = code.textContent;
 
 		// highlight.js and prism.js
