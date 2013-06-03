@@ -24,9 +24,10 @@ Reveal.initialize({
 
 Reveal.js uses `<pre>` and `<code>` tags for code.
 
-Follow this steps on the `<code>` tag you want to use for live coding:
+Follow these steps on the `<code>` tag you want to use for live coding:
 - add a `contenteditable` attribute (to make it editable)
 - add a `.liveCoding` class.
+- add a `.css` (if CSS) or `.xml` (if HTML, SVG...) class (see below).
 - add a `data-livecoding-id` attribute: the value is the `id` you want to target.
 
 Here is a full example:
@@ -43,10 +44,10 @@ Here is a full example:
 </div>
 ```
 
+###Language
 In Reveal, by default, code is highlighted with highlight.js (by detecting the language) and a class is added (eg. 
-css, xml) on `<code>`. This class is used by LiveCoding to update the code properly.
-
-If you disable highlight.js, or use another highlighter, please:
+css, xml) on `<code>`. This class is used by LiveCoding to update the code properly. BUT, if you disable highlight.js, 
+or use another highlighter, please use the HTML5 recommended syntax:
 - add a `.language-*` class on the `<code>` tag. (eg `.language-css`, `.language-markup`, ...)
 
 ##Notes
