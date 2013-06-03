@@ -26,7 +26,7 @@ var LiveCoding = (function() {
 
 		// highlight.js and prism.js
 		var isCSS = (code.classList.contains('css') || code.classList.contains('language-css'));
-		var isMarkup = (code.classList.contains('xml') || code.classList.contains('language-markup'));
+		var isMarkup = (code.classList.contains('xml') || code.classList.contains('language-markup') || code.classList.contains('language-xml') || code.classList.contains('language-html') || code.classList.contains('language-svg'));
 	
 		// if it's CSS
 		if(isCSS){
