@@ -19,14 +19,14 @@ var LiveCoding = (function() {
 	/**
 	 * Update
 	 */
-	function update(elem){
+	function update(code){
 
-		var id = elem.attributes.getNamedItem('data-liveCoding-id').nodeValue;
-		var val = elem.textContent;
+		var id = code.attributes.getNamedItem('data-liveCoding-id').nodeValue;
+		var val = code.textContent;
 
 		// highlight.js and prism.js
-		var isCSS = (elem.classList.contains('css') || elem.classList.contains('language-css'));
-		var isMarkup = (elem.classList.contains('xml') || elem.classList.contains('language-markup'));
+		var isCSS = (code.classList.contains('css') || code.classList.contains('language-css'));
+		var isMarkup = (code.classList.contains('xml') || code.classList.contains('language-markup'));
 	
 		// if it's CSS
 		if(isCSS){
