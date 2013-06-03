@@ -5,13 +5,13 @@
 var LiveCoding = (function() {
 	
 	// All <code> with ".liveCoding" class
-	var allPre = document.querySelectorAll('code.liveCoding');
+	var allCode = document.querySelectorAll('code.liveCoding');
 
-	for(var i = 0; i < allPre.length; i++){
-		update(allPre[i]);
+	for(var i = 0; i < allCode.length; i++){
+		update(allCode[i]);
 
 		// update when keyup
-		allPre[i].addEventListener('keyup', function(){
+		allCode[i].addEventListener('keyup', function(){
 			update(this);
 		});
 	}
