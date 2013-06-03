@@ -3,6 +3,8 @@ LiveCoding in Reveal.js
 
 A plugin for live coding CSS, HTML, SVG in [Reveal.js](https://github.com/hakimel/reveal.js/).
 
+You can try it here (slide 16): [The Future of CSS (masks)](http://iamvdo.me/conf/2013/meetupHTML5/#/16)
+
 ##Install
 
 Just add the plugin as a dependency of Reveal:
