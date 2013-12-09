@@ -42,7 +42,11 @@ var LiveCoding = (function() {
 			var reg = /(\{|\})/g;
 			val = val.split(reg);
 			for(var i = 0; i < val.length - 1; i+=4){
-				val[i] = '#' + id + ' ' + val[i];
+				var selectors = val[i].split(',');
+				for(var j = 0; j < selectors.length; j++){
+					selectors[j] = '#' + id + ' ' + selectors[j];
+				}
+				val[i] = selectors.join(',');
 			}
 			val = val.join('');
 
