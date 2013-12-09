@@ -42,9 +42,9 @@ var LiveCoding = (function() {
 			cssRules = cssRules.replace(/^\s+/g,'').replace(/\s+$/g,'');
 			var reg = /(\{|\})/g;
 			cssRules = cssRules.split(reg);
-			for(var i = 0; i < cssRules.length - 1; i+=4){
+			for (var i = 0; i < cssRules.length - 1; i+=4) {
 				var selectors = cssRules[i].split(',');
-				for(var j = 0; j < selectors.length; j++){
+				for (var j = 0; j < selectors.length; j++) {
 					selectors[j] = '#' + demoElementId + ' ' + selectors[j];
 				}
 				cssRules[i] = selectors.join(',');
@@ -53,7 +53,7 @@ var LiveCoding = (function() {
 
 			// if <style id="liveCoding_9999"> doesn't exist, create it
 			var styleElement = document.getElementById('liveCoding_' + demoElementId);
-			if( styleElement === null ){
+			if (styleElement === null) {
 				styleElement = document.createElement('style');
 				styleElement.setAttribute('id','liveCoding_' + demoElementId);
 				insertAfter(demoElement, styleElement);
@@ -61,7 +61,7 @@ var LiveCoding = (function() {
 			styleElement.innerHTML = cssRules;
 
 		// else, if it's markup (HTML, SVG, XML...)
-		} else if(isMarkup) {
+		} else if (isMarkup) {
 			// replace content 
 			demoElement.innerHTML = codeElement.innerHTML;
 		}
