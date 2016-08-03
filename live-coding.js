@@ -9,6 +9,12 @@ var LiveCoding = (function() {
 
 	for (var i = 0; i < codeElementList.length; i++) {
 		update(codeElementList[i]);
+		
+		// Remove autocorrect feature from the input.
+		codeElementList[i].setAttribute('autocorrect', 'off');
+		codeElementList[i].setAttribute('autocapitalize', 'off');
+		codeElementList[i].setAttribute('autocomplete', 'off');
+		codeElementList[i].spellcheck = false;
 
 		// update when keyUp
 		codeElementList[i].addEventListener('keyup', function() {
