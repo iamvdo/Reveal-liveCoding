@@ -69,7 +69,7 @@ var LiveCoding = (function() {
 		// else, if it's markup (HTML, SVG, XML...)
 		} else if (isMarkup) {
 			// replace content 
-			demoElement.innerHTML = codeElement.innerHTML;
+			demoElement.innerHTML = codeElement.textContent;
 		}
 		
 		function hasAtLeastOneClass(element, classList) {
